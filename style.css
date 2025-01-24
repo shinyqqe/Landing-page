@@ -8,7 +8,7 @@
 }
 
 .container {
-    width: 1300px;
+    max-width:1300px ;
     padding: 100px 15px;
     margin: 0 auto;
 }
@@ -34,7 +34,7 @@
     width: 100%;
 }
 
-.logo {}
+
 
 .menu-items {
     float: right;
@@ -172,6 +172,7 @@
 }
 
 .doing-img {
+    width: 100%;
     margin-left: 20px;
 }
 .advantages {
@@ -223,10 +224,7 @@
     position: sticky;
     top: 100px;
 }
-.section-title-main{
-    font-size: 50px;
-    text-align: center;
-    margin-bottom: 30px;
+.services-title {
     color: white;
     
 }
@@ -265,6 +263,9 @@
 .portfolio-table {
     width: 100%;
     height: 600px;
+}
+.portfolio-mobile{
+    display: none;
 }
 .portfolio-td-1 {
     background: url("img/portfolio/site1.png") center/cover no-repeat;
@@ -368,4 +369,79 @@
         transform: rotate(360deg);
     }
 
+}
+@media (max-width:768px){
+    .menu{
+        height: fit-content;
+    }
+    .logo{
+        width: 80px;
+        display: inline-block;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .menu-item{
+        display:block;
+    }
+    .header-title{
+        font-size: 40px;
+    }
+    .header-btn{
+        width: 200px;
+        font-size: 12px;
+        padding: 18px 25px;
+    }
+    .section-text{
+        font-size: 16px;
+    }
+    .section-title{
+        font-size: 30px;
+    }
+
+}
+@media (max-width:425px){
+    .doing-left, .doing-right{
+        width: 100%;
+    }
+    .doing-img{
+        margin: 20px 0;
+    }
+    .services-card{
+        width: 100%;
+    }
+    .advantages-card-1,.advantages-card-2,.advantages-card-3{
+        transform: translateX(0);
+        width: 100%;
+    }
+    .portfolio-item{
+        height: 200px;
+        border: 4px solid #df6161;
+        border-radius: 20px;
+        margin-bottom: 20px;
+
+    }
+    .portfolio-mobile{
+        display: block;
+    }
+    .portfolio-table{
+        display: none;
+    }
+    .portfolio-mobile-1{
+        background: url("img/portfolio/site1.png") center/cover no-repeat;
+    }
+    .portfolio-mobile-2{
+        background: url("img/portfolio/site2.png") center/cover no-repeat;
+    }
+    .portfolio-mobile-3{
+        background: url("img/portfolio/site3.png") center/cover no-repeat;
+    }
+    .portfolio-mobile-4{
+        background: url("img/portfolio/site4.png") center/cover no-repeat;
+    }
+    .footer-btn{
+        width: 200px;
+        font-size: 12px;
+        padding: 18px 25px;
+    }
 }
